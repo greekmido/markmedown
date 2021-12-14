@@ -2,7 +2,7 @@
   "name": "markmedown",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/greekmido/markmedown",
+  "homepage": "https://greekmido.github.io/markmedown/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
