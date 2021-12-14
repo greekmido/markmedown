@@ -7,7 +7,7 @@ function View (props){
     
     return(
      
-            <div id='preview' className=''>
+            <div id='preview' className='col-6'>
             {ready}
             </div>
     )

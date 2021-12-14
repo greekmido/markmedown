@@ -1,67 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  display:block;
+  color: darkslategrey;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
 .App {
  /* text-align: center;*/
- background-image: url('/src/bbburst.svg');
- background-repeat: no-repeat, repeat;
- background-position: center;
- background-size: cover;
- min-height: 100vh;
+
+
 }
 #main{
   min-height: 100vh;
 }
-#preview {
-  padding: 0 1rem;
 
-  blockquote {
-    border-left: 3px solid #224b4b;
-    color: #224b4b;
-    padding-left: 5px;
-    margin-left: 25px;
-  }
-
-  > p > code {
-    padding: 3px;
-  }
-
-  code {
-    background: white;
-    font-size: 0.875rem;
-    font-weight: bold;
-  }
-
-  pre {
-    display: block;
-    overflow: auto;
-    background: white;
-    padding: 5px;
-    line-height: 1.2;
-  }
-
-  h1 {
-    border-bottom: 2px solid green;
-  }
-
-  h2 {
-    border-bottom: 1px solid green;
-  }
-
-  table {
-    border-collapse: collapse;
-  }
-
-  td,
-  th {
-    border: 2px solid green;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  img {
-    display: block;
-    max-width: 90%;
-    margin: 2rem auto;
-  }
-}
 
 @media screen and (max-width: 420px) {
   body {
@@ -80,16 +45,34 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+#preview{
+  background: cadetblue;
+  padding-top: 20px;
+}
+#preview pre{
+  background: cornsilk;
+  color:darkslategrey
+}
+#preview p{
+  display: block;
+}
+#preview table,#preview td{
+  border: darkslategrey solid;
+}
+#preview img{
+  width: 100%;
+}
+#editor{
+  
+}
 .App-header {
-  background-color: #282c34;
   min-height: 20vh;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

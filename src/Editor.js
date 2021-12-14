@@ -1,16 +1,11 @@
-import { useState } from "react";
-import View from "./View";
 
-function Editor (){
-    const [editorVal,edit] = useState("this is the default vlaue of the marked down text");
-    function handleEditorChange(event){
-        edit(event.target.value)
-    }
+
+function Editor (props){
+    
     return(
-    <div className="col-5">
+    <div id='editor' className="col-6">
         <>
-        <textarea className="form-control" onInput={handleEditorChange} defaultValue={editorVal} />
-        <View toMark={editorVal} />
+        <textarea className="form-control" rows='10' onInput={props.handle} defaultValue={props.workArea} />   
         </>
  </div>
     )
